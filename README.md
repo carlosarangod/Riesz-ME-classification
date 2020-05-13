@@ -1,8 +1,7 @@
 # Riesz-Micro-Expression-classification
-Micro Expression Classification using Riesz Pyramid features
+This is the companion code of "Mean Oriented Riesz Features for Micro Expression Classification". This project reads image sequences from different micro-expression databases, detect and track the faces in the sequence. The face sequences are processed using the Riesz pyramid to compute phase differences between consecutive frames. This data is extracted as a series of histograms. These features are then used to train a classification model. 
 
 ## Getting Started
-
 
 ### Prerequisites
 
@@ -22,6 +21,8 @@ For classifying the micro-expressions it's required to have Python installed wit
 * [CAS(ME)²](http://fu.psych.ac.cn/CASME/casme2-en.php) - Chinese Academy of Sciences Macro-Expressions and Micro-Expressions
 * [CK+](http://fu.psych.ac.cn/CASME/casme2-en.php) - The Extended Cohn-Kanade Dataset
 
+### Reading the databases
+The user needs to specify the directory of the database in 
 
 ## Authors
 
