@@ -22,7 +22,10 @@ For classifying the micro-expressions it's required to have Python installed wit
 * [CK+](http://fu.psych.ac.cn/CASME/casme2-en.php) - The Extended Cohn-Kanade Dataset
 
 ### Reading the databases
-The user needs to specify the directory of the database in 
+The user needs to download the database he wishes to use and specify the location of its directory in "Image acquisition/Img_from_database.m".
+```
+data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
+```
 
 ## Authors
 
