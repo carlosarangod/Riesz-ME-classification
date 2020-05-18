@@ -35,7 +35,11 @@ For classifying the micro-expressions it's required to have Python installed wit
 - Download any of the databases previously mentioned
 - Specify the location of the database's directory in "Image acquisition/Img_from_database.m".
 ```
-1: data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
+13:  if strcmp(database,'SMIC_High')
+14:        data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
+...
+13:  if strcmp(database,'SMIC_High')
+14:        data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
 ```
 - 
 
