@@ -11,20 +11,17 @@ function total_dir = Img_from_database(database,subject,subset,varargin)
         error('Too many inputs')
     end
     if strcmp(database,'SMIC_High')
-%         data_dir = 'C:\Users\CarlosAndres.Carlos\Documents\PhD\Databases\Emotions\SMIC-E_raw image';
-        data_dir = strcat(getenv('SMIC'),'\');
+        data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
         data_type = 'HS_long\SMIC-HS-E';
         emotion = varargin{1};
         total_dir = read_SMIC_imgs(data_dir,data_type,subject,emotion,subset);
     elseif strcmp(database,'SMIC_RGB')      
-        data_dir = strcat(getenv('SMIC'),'\');
-%         data_dir = 'C:\Users\CarlosAndres.Carlos\Documents\PhD\Databases\Emotions\SMIC-E_raw image';
+        data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
         data_type = 'VIS_long\SMIC_VIS_E\SMIC_VIS_E\VIS';
         emotion = varargin{1};
         total_dir = read_SMIC_imgs(data_dir,data_type,subject,emotion,subset);
     elseif strcmp(database,'CASME2')
-        data_dir = strcat(getenv('CASME2'),'\CASME2-RAW');
-%         data_dir = 'C:\Users\CarlosAndres.Carlos\Documents\PhD\Databases\Emotions\CASME2_RAW\CASME2-RAW';
+        data_dir = 'C:\Databases\Emotions\CASME2_RAW\CASME2-RAW';
         total_dir = read_CASME_imgs(data_dir,subject,subset);
     elseif strcmp(database,'CAS(ME)2')
         data_dir = getenv('CAS(ME)2');
