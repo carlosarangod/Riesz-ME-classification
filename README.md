@@ -33,15 +33,25 @@ For classifying the micro-expressions it's required to have Python installed wit
 ### Running it, step by step
 
 - Download any of the databases previously mentioned
-- Specify the location of the database's directory in "Image acquisition/Img_from_database.m".
-```
-13:  if strcmp(database,'SMIC_High')
-14:        data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
-...
-13:  if strcmp(database,'SMIC_High')
-14:        data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
-```
-- 
+- Specify the location of the database's directory in "Image acquisition/Img_from_database.m" in the variable data_dir:
+  ```
+  13:  if strcmp(database,'SMIC_High')
+  14:        data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
+  ...
+  23:  elseif strcmp(database,'CASME2')
+  24:        data_dir = 'C:\Databases\Emotions\CASME2_RAW\CASME2-RAW';
+  ```
+- Specify the database you want to process in Riesz_features_extraction.m
+  ```
+  Database = 'SMIC_High';
+  ```
+  or 
+  ```
+  Database = 'CASME2';
+  ```
+- Run Riesz_features_extraction.m in Matlab
+- The extracted features are saved in "Riesz_Histograms_Dmean_Database.mat' (There is a secondary filed called "Riesz_Histograms_Dmean_secemo_SMIC_High.mat' for the videos with two micro-expressions in the SMIC database).
+- Run in Python3 "Classification\Riesz_classification_SMIC.py" or "Classification\Riesz_classification_CASME2.py" to classify the extracted features of either SMIC or CASME2 datasets.
 
 
 ## Authors
