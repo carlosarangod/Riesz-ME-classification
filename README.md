@@ -29,14 +29,16 @@ For classifying the micro-expressions it's required to have Python installed wit
 
 * [SMIC](https://www.oulu.fi/cmvs/node/41319) - Spontaneous Micro-expression Database
 * [CASME II](http://fu.psych.ac.cn/CASME/casme2-en.php) - Chinese Academy of Sciences Micro-Expressions database
-* [CAS(ME)²](http://fu.psych.ac.cn/CASME/casme2-en.php) - Chinese Academy of Sciences Macro-Expressions and Micro-Expressions
-* [CK+](http://fu.psych.ac.cn/CASME/casme2-en.php) - The Extended Cohn-Kanade Dataset
 
-### Reading the databases
-The user needs to download the database he wishes to use and specify the location of its directory in "Image acquisition/Img_from_database.m".
+### Running it, step by step
+
+- Download any of the databases previously mentioned
+- Specify the location of the database's directory in "Image acquisition/Img_from_database.m".
 ```
-data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
+1: data_dir = 'C:\Databases\Emotions\SMIC-E_raw image';
 ```
+- 
+
 
 ## Authors
 
